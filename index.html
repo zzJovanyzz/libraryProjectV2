@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myNav">Library Project</div>
+    <div id="mainContainer">
+        
+        <button id="addBook" onclick="addBookButton()"> Add Book</button>
+        <div id="keyContainer">
+            <div id="beenRead" class="readKeys">Read</div>
+            <div id="notRead" class="readKeys">Not Read</div>
+        </div>
+        <div id="formContainer">
+            <form id="form">
+                <label for="title">Title:</label>
+                <input type="text" id="title">
+                <label for="author">Author:</label>
+                <input type="text" id="author">
+                <label for="pages">Number of Pages:</label>
+                <input type="text" id="pages">
+                <label for="Read">Check if read:</label>
+                <input type="checkbox" id="read" default="false">
+                <input type="submit" id="submitButton" class="formButton" onclick="submitButtonf()">
+                <button class="formButton" onclick="cancelButton()">Cancel</button>
+
+            </form>
+        </div>
+        <div id="bookCard"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

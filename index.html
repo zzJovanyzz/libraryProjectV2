@@ -11,7 +11,7 @@
     <div id="myNav">Library Project</div>
     <div id="mainContainer">
         
-        <button id="addBook" onclick="addBookButton()"> Add Book</button>
+        <button id="addBook" onclick="libraryModule.addBookButton()"> Add Book</button>
         <div id="keyContainer">
             <div id="beenRead" class="readKeys">Read</div>
             <div id="notRead" class="readKeys">Not Read</div>
@@ -26,8 +26,8 @@
                 <input type="text" id="pages">
                 <label for="Read">Check if read:</label>
                 <input type="checkbox" id="read" default="false">
-                <input type="submit" id="submitButton" class="formButton" onclick="submitButtonf()">
-                <button class="formButton" onclick="cancelButton()">Cancel</button>
+                <input type="submit" id="submitButton" class="formButton" onclick="libraryModule.submitButtonf()">
+                <button class="formButton" onclick="libraryModule.cancelButton()">Cancel</button>
 
             </form>
         </div>
